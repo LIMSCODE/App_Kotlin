@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id = "@+id/mTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text = "TITLE"
+            />
+
+        <TextView
+            android:id="@+id/item_post_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="20sp"
+            tools:text="작성자: name" />
+
+        <ImageView
+            android:id="@+id/mMenus"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_more" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id = "@+id/mSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_light"
+        tools:text = "Contents" />
+
+</LinearLayout>
